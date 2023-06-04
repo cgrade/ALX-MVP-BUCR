@@ -26,10 +26,12 @@
     </p>
   </div>
 
+  <a href="{% url 'create_reservation' restaurant.id %}" class="button"
+  >Book Reservation</a
+>
+
   <div class="restaurant-reviews">
-    <a href="{% url 'create_reservation' restaurant.id %}" class="button"
-      >Book Reservation</a
-    >
+
     <h4>Reviews:</h4>
     {% for review in reviews %}
     <div class="review">
